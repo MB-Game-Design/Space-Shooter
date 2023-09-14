@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3yiavnmtj5tc"]
+
+[ext_resource type="Texture2D" uid="uid://s1cqmrhfx8u7" path="res://Assets/Player.png" id="1_jdi04"]
+[ext_resource type="Script" path="res://Player.gd" id="1_pjtr5"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(473, 313)
+up_direction = Vector2(0.00333331, 0.999994)
+script = ExtResource("1_pjtr5")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("1_jdi04")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
