@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7fcwp63pbfsy"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_1igfk"]
+[ext_resource type="Texture2D" uid="uid://m5tpcsyrnqhh" path="res://Assets/Exhaust.png" id="2_c6qau"]
+[ext_resource type="Texture2D" uid="uid://s1cqmrhfx8u7" path="res://Assets/Player.png" id="3_pby8p"]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(536, 372)
+up_direction = Vector2(0.00333331, 0.999994)
+script = ExtResource("1_1igfk")
+metadata/_edit_group_ = true
+
+[node name="Exhaust" type="Sprite2D" parent="."]
+position = Vector2(0, 50)
+texture = ExtResource("2_c6qau")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_pby8p")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
